@@ -1,0 +1,12 @@
+.price-title {
+  margin-top: 20px;
+}
+
+.price-dropdown {
+  width: 100%; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}

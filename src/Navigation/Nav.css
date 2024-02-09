@@ -1,0 +1,142 @@
+/* App.css or another CSS file */
+@import "~font-awesome/css/font-awesome.min.css";
+
+nav {
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+  
+}
+
+.fa {
+  cursor: pointer;
+}
+
+input {
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  width: 14rem;
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+/* Style for the nav-container */
+.nav-container {
+  margin: auto;
+  display: flex; /* Use Flexbox to align items horizontally */
+  align-items: flex-end; /* Center items vertically within the container */
+}
+
+/* Add margin or padding to create spacing between the input and the file input */
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Add this CSS code to your existing CSS file */
+.title{
+  cursor: pointer;
+}
+
+.title:hover {
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.2);
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  text-transform: uppercase;
+  line-height: normal;
+}
+ul li a {
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #454545;
+  transition: .5s;
+}
+ul li a::before,
+ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #454545;
+  overflow: hidden;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+ul li a::before {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+ul li a::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: left;
+}
+ul li a:hover::before,
+ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+ul li a:hover::before {
+  transform-origin: left;
+}
+ul li a:hover::after {
+  transform-origin: right;
+}
+
+ul li div input{
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #454545;
+  transition: .5s;
+}
+ul li div button{
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #454545;
+  transition: .5s;
+}
